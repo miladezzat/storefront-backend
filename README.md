@@ -1,6 +1,7 @@
 # Instructions to run this Project:
 
-- We are working with Postgres Database , all the required data needed for connection with database is in the .env file
+- We are working with Postgres Database , all the required data needed for connection with database is in the `.env` file
+```
   POSTGRES_HOST = localhost
   POSTGRES_DB = store_front_db
   POSTGRES_DB_TEST = store_front_db_test
@@ -11,14 +12,16 @@
   SALT_ROUNDS = 10
   TOKEN_SECRET = token-secret
   POSTGRES_PORT = 5432
-
+```
 ## to setup and connect to the database :
 
+```
 CREATE USER milad WITH PASSWORD '123456';
 CREATE DATABASE store_front_db;
 CREATE DATABASE store_front_db_test;
 GRANT ALL PRIVILEGES ON DATABASE store_front_db TO milad;
 GRANT ALL PRIVILEGES ON DATABASE store_front_db_test TO milad;
+```
 
 ### you now have created the needed setup to connect to the database
 
