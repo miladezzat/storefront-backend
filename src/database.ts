@@ -17,20 +17,20 @@ let client: Pool;
 client = new Pool({
   host: POSTGRES_HOST,
   port: Number(POSTGRES_PORT),
-  database: POSTGRES_DB_TEST,
+  database: POSTGRES_DB,
   user: POSTGRES_USER,
   password: POSTGRES_PASSWORD,
-})
+});
 
 
-if (ENV === "dev") {
+if (ENV === 'testing') {
   client = new Pool({
     host: POSTGRES_HOST,
     port: Number(POSTGRES_PORT),
-    database: POSTGRES_DB,
+    database: POSTGRES_DB_TEST,
     user: POSTGRES_USER,
     password: POSTGRES_PASSWORD,
-  });
-} 
+  })
+}
 
 export default client;

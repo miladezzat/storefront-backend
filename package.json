@@ -9,7 +9,7 @@
     "start": "nodemon src/server.ts",
     "watch": "tsc-watch",
     "lint":"eslint . --fix",
-    "test": "set ENV=test && db-migrate up --env test && npm run build && npm run jasmine && db-migrate down -c 5 --env test",
+    "test": "set ENV=testing && db-migrate up --env test && npm run build && npm run jasmine && db-migrate down -c 5 --env test",
     "migrate:create": "npx db-migrate create $FILE_NAME --sql-file",
     "migrate:up": "npx db-migrate up",
     "migrate:down": "npx db-migrate down"

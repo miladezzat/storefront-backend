@@ -5,7 +5,7 @@
   POSTGRES_HOST = localhost
   POSTGRES_DB = fantasy_worlds
   POSTGRES_DB_TEST = fantasy_worlds_test
-  POSTGRES_USER = postgres
+  POSTGRES_USER = milad
   POSTGRES_PASSWORD = 123456
   ENV = dev
   BCRYPT_PASSWORD = your-secret-password
@@ -16,11 +16,11 @@
 ## to setup and connect to the database :
 
 ```
-CREATE USER postgres WITH PASSWORD '123456';
+CREATE USER milad WITH PASSWORD '123456';
 CREATE DATABASE fantasy_worlds;
 CREATE DATABASE fantasy_worlds_test;
-GRANT ALL PRIVILEGES ON DATABASE fantasy_worlds TO postgres;
-GRANT ALL PRIVILEGES ON DATABASE fantasy_worlds_test TO postgres;
+GRANT ALL PRIVILEGES ON DATABASE fantasy_worlds TO milad;
+GRANT ALL PRIVILEGES ON DATABASE fantasy_worlds_test TO milad;
 ```
 
 ### you now have created the needed setup to connect to the database
@@ -49,14 +49,14 @@ you need to `database.json`
     "driver": "pg",
     "host": "127.0.0.1",
     "database": "fantasy_worlds",
-    "user": "postgres",
+    "user": "milad",
     "password": "123456"
   },
   "test": {
     "driver": "pg",
     "host": "127.0.0.1",
     "database": "fantasy_worlds_test",
-    "user": "postgres",
+    "user": "milad",
     "password": "123456"
   }
 }
