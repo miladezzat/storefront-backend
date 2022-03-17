@@ -3,9 +3,9 @@
 - We are working with Postgres Database , all the required data needed for connection with database is in the `.env` file
 ```
   POSTGRES_HOST = localhost
-  POSTGRES_DB = store_front_db
-  POSTGRES_DB_TEST = store_front_db_test
-  POSTGRES_USER = milad
+  POSTGRES_DB = fantasy_worlds
+  POSTGRES_DB_TEST = fantasy_worlds_test
+  POSTGRES_USER = postgres
   POSTGRES_PASSWORD = 123456
   ENV = dev
   BCRYPT_PASSWORD = your-secret-password
@@ -16,11 +16,11 @@
 ## to setup and connect to the database :
 
 ```
-CREATE USER milad WITH PASSWORD '123456';
-CREATE DATABASE store_front_db;
-CREATE DATABASE store_front_db_test;
-GRANT ALL PRIVILEGES ON DATABASE store_front_db TO milad;
-GRANT ALL PRIVILEGES ON DATABASE store_front_db_test TO milad;
+CREATE USER postgres WITH PASSWORD '123456';
+CREATE DATABASE fantasy_worlds;
+CREATE DATABASE fantasy_worlds_test;
+GRANT ALL PRIVILEGES ON DATABASE fantasy_worlds TO postgres;
+GRANT ALL PRIVILEGES ON DATABASE fantasy_worlds_test TO postgres;
 ```
 
 ### you now have created the needed setup to connect to the database
@@ -48,15 +48,15 @@ you need to `database.json`
   "dev": {
     "driver": "pg",
     "host": "127.0.0.1",
-    "database": "store_front_db",
-    "user": "milad",
+    "database": "fantasy_worlds",
+    "user": "postgres",
     "password": "123456"
   },
   "test": {
     "driver": "pg",
     "host": "127.0.0.1",
-    "database": "store_front_db_test",
-    "user": "milad",
+    "database": "fantasy_worlds_test",
+    "user": "postgres",
     "password": "123456"
   }
 }

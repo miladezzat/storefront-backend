@@ -2,15 +2,15 @@
   "dev": {
     "driver": "pg",
     "host": "127.0.0.1",
-    "database": "store_front_db",
-    "user": "milad",
+    "database": "fantasy_worlds",
+    "user": "postgres",
     "password": "123456"
   },
   "test": {
     "driver": "pg",
     "host": "127.0.0.1",
-    "database": "store_front_db_test",
-    "user": "milad",
+    "database": "fantasy_worlds_test",
+    "user": "postgres",
     "password": "123456"
   }
 }
